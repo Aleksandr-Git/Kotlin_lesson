@@ -31,4 +31,5 @@ fun main() {
     }
     println("test")
     println("test_2")
+    println("test_3")
 }
