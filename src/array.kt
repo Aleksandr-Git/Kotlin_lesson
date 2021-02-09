@@ -29,4 +29,5 @@ fun main() {
     asd.forEachIndexed(){
             index, i -> println("перебор массива вариант 3: индекс - $index, значение - $i")
     }
+    println("test")
 }
