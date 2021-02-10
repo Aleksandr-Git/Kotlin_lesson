@@ -1,9 +1,9 @@
 fun main() {
 
-    var asd: Array<String> = arrayOf("aa", "ss", "dd")
+    val asd: Array<String> = arrayOf("aa", "ss", "dd")
     println(asd[0])
 
-    var  sdf = arrayOf(1, 2, 3)
+    val  sdf = arrayOf(1, 2, 3)
     println(sdf[1])
 
     //запрос значения по индексу
@@ -14,7 +14,7 @@ fun main() {
     println(sdf[2])
 
     //длинна масива
-    var s = asd.size
+    val s = asd.size
     println("длинна массива $s")
 
     //перебор массива
