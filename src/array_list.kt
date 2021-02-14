@@ -6,4 +6,6 @@ fun main() {
     println(list.get(1))
     //выводит индекс последнего элемента
     println(list.lastIndexOf(4))
+    //выводит размер массива
+    println(list.size)
 }
