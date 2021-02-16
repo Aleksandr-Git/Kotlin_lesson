@@ -8,4 +8,12 @@ fun main() {
     println(list.lastIndexOf(4))
     //выводит размер массива
     println(list.size)
+    //перебор массива
+    list.forEach {
+            i -> println("перебор массива вариант 2 $i")
+    }
+    //перебор индексов и значений
+    list.forEachIndexed(){
+            index, i -> println("перебор массива вариант 3: индекс - $index, значение - $i")
+    }
 }
