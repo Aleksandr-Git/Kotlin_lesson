@@ -9,7 +9,7 @@ fun main(){
         s++
         println("s теперь = $s")
     }
-
+//не работает, надо разобраться
     when(x){
         1 -> println(1)
         2 -> println(2)
