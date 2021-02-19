@@ -1,15 +1,22 @@
 fun main(){
-    val my_1 = my("Jon", "Lenon", 20)
-    val my_2 = my()
-    println(my_1.firstName)
-    println(my_1.lastName)
-    println(my_1.age)
+    val my1 = my("Jon", "Lenon", 20)
+    val my2 = my()
+//установка значения в переменную класса
+    my1.login = "cod"
+//вывоз значения переменной и выполнения децствия из класса
+    println(my1.login)
 
-    var firstName = my_2.firstName
-    var lastName = my_2.lastName
-    var age = my_2.age
+    println(my1.firstName)
+    println(my1.lastName)
+    println(my1.age)
+
+    val firstName = my2.firstName
+    val lastName = my2.lastName
+    val age = my2.age
 
     println("Имя: $firstName")
     println("Фамилия: $lastName")
     println("Возраст: $age")
+
+    my1.printUser()
 }
