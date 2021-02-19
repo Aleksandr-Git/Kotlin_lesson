@@ -2,6 +2,9 @@
 //   var firstName = _firstName
 //   var lastName = _lastName
 
+// модификатор доступа internal class... класс будет доступен только внутри модуля
+// модификатор доступа private class ... класс будет доступен только внтри файла
+
 //установка значений в переменные по умолчанию через конструктор
 class my(var firstName: String = "Alex", var lastName: String = "Grey", var age: Int = 30){
 //установка значений в переменную класса
