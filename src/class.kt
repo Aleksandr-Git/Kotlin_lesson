@@ -5,6 +5,7 @@
 //установка значений в переменные по умолчанию через конструктор
 class my(var firstName: String = "Alex", var lastName: String = "Grey", var age: Int = 30){
 //установка значений в переменную класса
+//field это обращение к переменной login
     var login: String? = null
         set(value) {
             if(value == "test")
@@ -14,7 +15,9 @@ class my(var firstName: String = "Alex", var lastName: String = "Grey", var age:
         }
 //запрос значения переменной и выполнение какого-либо действия при запросе
         get(){
-            println("запрос значения переменной")
+    // если значение в переменную не установлено, то будет выведен текст с переменной loginField
+            val loginField = field ?: "неизвестно"
+            println("переменная равна $loginField")
             return field
         }
     fun printUser(){
