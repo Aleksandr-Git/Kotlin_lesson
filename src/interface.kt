@@ -9,13 +9,18 @@ interface UserInfoProvider{
         user.printUser()
     }
 }
+
+interface DbConnection{
+    fun getConnection() : String
+}
 // абстрактный класс
 //abstract class MainProvider : UserInfoProvider{
 
 //}
 
 // создаем класс с интерфейсом UserInfoProvider
-class MainProvider : UserInfoProvider{
+//open делает класс наследуемым
+open class MainProvider : UserInfoProvider, DbConnection{
     //переписываем переменную
     override val info: String
         get() = "Method was called"
@@ -30,6 +35,10 @@ class MainProvider : UserInfoProvider{
         //обращение к функции в интерфейсе
         super.printInfo(user)
         println("дополнительный код")
+    }
+
+    override fun getConnection(): String {
+        return "DB Connection"
     }
 }
 
