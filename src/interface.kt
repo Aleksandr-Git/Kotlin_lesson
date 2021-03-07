@@ -21,6 +21,8 @@ interface DbConnection{
 // создаем класс с интерфейсом UserInfoProvider
 //open делает класс наследуемым
 open class MainProvider : UserInfoProvider, DbConnection{
+    //переменнаф доступна для калссов наследников
+    protected open val db = "DB Connection"
     //переписываем переменную
     override val info: String
         get() = "Method was called"
@@ -38,7 +40,7 @@ open class MainProvider : UserInfoProvider, DbConnection{
     }
 
     override fun getConnection(): String {
-        return "DB Connection"
+        return db
     }
 }
 

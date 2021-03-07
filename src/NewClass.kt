@@ -1,4 +1,6 @@
 class NewClass: MainProvider(){
+    override val db: String
+        get() = "DB not connected"
 // переписываем переменную из родительского класса
     override val info: String
         get() = "Новый метод из класса наследника"
