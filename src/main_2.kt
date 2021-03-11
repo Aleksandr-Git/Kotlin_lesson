@@ -16,12 +16,18 @@ fun filterList(list: List<String>, filter: (String) -> Boolean){
             println(el)
     }
 }
+//переменной прсваивается значение из функции
+val filter: (String) -> Boolean = {
+    it.startsWith("J")
+}
 
 fun main(args: Array<String>) {
     //создаем список
     val list = listOf("Java", "PHP", "Perl", "JavaScripn", "C++")
     //лямбда-функция фильтр проверяет начинается ли элемент с буквы Р, it берет значение из el
-    filterList(list, { it.startsWith("P") })
+    //filterList(list, { it.startsWith("P") })
+    //функция принимает в качестве параметра функцию
+    filterList(list, filter)
 
 //    //создаем объект на основе класса Db с классом данных MongoDb
 //    val db = Db.MongoDb(5, "mongo")
